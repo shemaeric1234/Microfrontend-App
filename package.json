@@ -1,0 +1,13 @@
+{
+  "name": "microfrontend-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=apps/host-app",
+    "build": "npm run build --workspaces",
+    "dev": "npm run start --workspaces --parallel"
+  }
+}
